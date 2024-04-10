@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon clone </title>
+    <link rel="icon" type="image/x-icon" href="favi_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-logo ">
+            <div class="logo border"></div>
+            </div>
+            <div class="address ">
+            <span class="deliver">Deliver to </span>
+            <div class="address-location">
+            <span style="font-size: 20px;">
+                <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <span style="margin-left: 10px; font-size: 20px;">
+                <p>India</p>
+            </span>
+            </div>
+            </div>
+            <div class="select">
+                <div>
+                    <select class="option-select">
+                        <option value="">All</option>
+                    </select>
+                </div>
+                <div>
+                    <input placeholder="Search Amazon" class="input-select">
+                </div>
+                <div class="search-icon">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    
+                </div>
+            </div>
+            <div class="country">
+                <span><img src="data:image/jpeg;base64,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" height="20px" width="20px" background-size="cover"></span>
+                <span><p style="color: white">IN</p></span>
+                
+            </div>
+            <div class="hello">
+                <span><p>hello,sign in</p></span>
+                <span style="font-size: 16px;"> 
+                    <p>Account & list</p>
+
+                </span>
+
+            </div>
+            <div class="order">
+            <span><p>returns</p></span>
+            <span style="font-size: 16px;">
+            <p>& Order</p>
+            </span>
+            </div>
+            <div class="cart-main">
+                <span style="color: white; font-size: 20px; position: relative; top: 10px;"><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="cart">Cart</span>
+                
+            </div>
+        
+                
+
+    </div>
+    <div class="panel">
+       <div class="menu">
+        <div class="menu-logo"><i class="fa-solid fa-bars"></i></div>
+        <div style="position: relative; left: 15px;"><p>All</p></div>
+       
+     </div>
+    <div class="today">
+        <div class="deals">
+            <span class="text-deals">Today's Deals</span>
+            <span class="text-deals">Registry</span>
+            <span class="text-deals">Customer Service</span>            
+            <span class="text-deals">Gift Cards</span>
+            <span class="text-deals">Sell</span>
+        </div>
+        </div>
+    </div>
+    <div class="section">
+     <div class="text-section"><p style="position: relative; top: 10px;">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. Click here to go to amazon.in</p></div>
+  </div>
+  <div class="div">
+    <div class="div1">
+    <p style="font-size: 30px; text-align: center;">Toys under $25</p>
+    <div class="toy1" style="height: 250px; width:300px;"></div>
+    <span style="color: #0B1964; top: 10px; left: 5px; position: relative;">Shop Now</span>
+    </div>
+    <div class="div1">
+        <p style="font-size: 30px; text-align: center;">Deal's in PCs</p>
+        <div class="toy2" style="height: 250px; width:300px;"></div>
+        <span style="color: #0B1964; top: 10px; left: 5px; position: relative;">Shop Now</span>
+    </div>
+    <div class="div1">
+        <p style="font-size: 30px; text-align: center;">Gaming zone</p>
+        <div class="toy3" style="height: 250px; width:300px;"></div>
+    <span style="color: #0B1964; top: 10px; left: 5px; position: relative;">Shop Now</span>
+    </div>
+    <div class="div1">
+        <p style="font-size: 30px; text-align: center;">Refresh your space</p>
+        <div class="toy4" style="height: 250px; width:300px;"></div>
+    <span style="color:#0B1964; top: 10px; left: 5px; position: relative;">Shop Now</span>
+    </div>
+    <div class="div1">
+     <p style="font-size: 30px; text-align: center;">Personal Care under $25</p>
+     <div class="toy5" style="height: 250px; width:300px;"></div>
+    <span style="color: #0B1964; top: 10px; left: 5px; position: relative;">Shop Now</span>
+    </div>
+    <div class="div1">
+       <p style="font-size: 30px; text-align: center;">perfume</p>
+       <div class="toy6" style="height: 250px; width:300px;"></div>
+    <span style="color: #0B1964; top: 10px; left: 5px; position: relative;">Shop Now</span>
+    </div>
+  </div>
+</div>
+<div class="footer">
+
+    <span><p style="color: white; font-size: 20px; text-align: center;  position:relative;top: 10px;">Back to top</p></span> 
+</div>
+<div class="page">
+<div class="page1">
+    
+      <h2 style="font-size: 20px;color: #FFFFF3;">Get to Know Us</h2>
+     <p style="font-size: 16px;"> Careers</p>
+     <p style="font-size: 16px;"> Blog</p>
+     <p style="font-size: 16px;">About Amazon</p>
+     <p style="font-size: 16px;"> Investor Relations</p>
+     <p style="font-size: 16px;">Amazon Devices</p>
+     <p style="font-size: 16px;">Amazon Science</p> 
+
+</div>
+<div class="page2">
+
+    <h2 style="font-size: 20px; color: #FFFFF3;">Make Money with us</h2>
+    <p style="font-size: 16px;"> sell products on amazon</p>
+    <p style="font-size: 16px;"> Sell on Amazon Business</p>
+    <p style="font-size: 16px;">Sell apps on Amazon</p>
+    <p style="font-size: 16px;"> Become an Affiliate</p>
+    <p style="font-size: 16px;">Advertise Your Products</p>
+    <p style="font-size: 16px;">Self-Publish with Us</p>  
+    <p style="font-size: 16px;">Host an Amazon Hub</p> 
+    <p style="font-size: 16px;">See More Make Money with Us</p> 
+
+</div>
+<div class="page3">
+    <h2 style="font-size: 20px;color: #FFFFF3;">Connect with US</h2>
+    <p style="font-size: 16px;">Facebook</p>
+    <p style="font-size: 16px;">Twitter</p>
+    <p style="font-size: 16px;">Instagram</p>
+</div>
+<div class="page4">
+    <h2 style="font-size: 20px;color: #FFFFF3;">Let Us Help You</h2>
+    <p style="font-size: 16px;">COVID-19 and Amazon</p>
+    <p style="font-size: 16px;">Your Account Returns Center </p>
+    <p style="font-size: 16px;">100% Purchase prtection</p>
+    <p style="font-size: 16px;">Amazn Global selling</p>
+    <p style="font-size: 16px;">become an affiliate</p>
+    <p style="font-size: 16px;">fulfilment by Amazon</p>  
+    <p style="font-size: 16px;">Advertise Your Products</p> 
+    <p style="font-size: 16px;">Amazon Pay on Merchants</p>   
+</div>
+</div>
+<div class="title">
+ <div class="p1" style="word-spacing: 15px;"><p> Australia
+    Brazil
+    Canada
+    China
+    France
+    Germany
+    Italy
+    Japan
+    Mexico
+    Netherlands
+    Poland
+    Singapore
+    Spain
+    Turkey
+    United Arab Emirates</p></div>
+  <div class="p2" ><p> United Kingdom
+    United States
+   </p>
+    </div>
+</div>
+<div class="last-section">
+    <span class="box"><p> Amazon Music<br> Stream millions?<br>of songs</p></span>
+    <span class="box"> <p>	Amazon Ads<br>Reach customers<br> wherever they<br>spend their time</p></span>
+    <span class="box"><p>6pm<br>Score deals<br> on fashion brands</p></span>
+    <span class="box"><p><br>Books, art<br>& collectiblesM</p></span>
+    <span class="box"><p>ACX<br>Audiobook Publishing<br> Made Easy</p></span>
+    <span class="box"><p>Sell on Amazon<br>>Start a Selling Account</p></span>
+    <span class="box"><p>Amazon Business<br>Everything For<br>Your Business</p></span>
+    <span class="box"><p>AmazonGlobal<br>Ship Orders<br>Internationally</p></span>
+    <span class="box"><p>Home Services<br>Experienced Pros<br> Happiness Guarantee</p></span>
+    <span class="box"><p>Amazon Web Services<br>Scalable Cloud<br>Computing Services</p></span>
+    <span class="box"><p>AudibleBox Office Mojo<br>Find Movie<br>Box Office Data<br>Listen to Books & Original<br>Audio Performances</p></span>
+    <span class="box"><p>Box Office Mojo<br> Find Movie<br> Box Office Data</p></span>
+    <span class="box"><p>Home Services<br>Experienced Pros<br> Happiness Guarantee</p></span>
+    <span class="box"><p>Amazon Web Services<br>Scalable Cloud<br>Computing Services</p></span>
+    <span class="box"><p>AudibleBox Office Mojo<br>Find Movie<br>Box Office Data<br>Listen to Books & Original<br>Audio Performances</p></span>
+    <span class="box"><p>Box Office Mojo<br> Find Movie<br> Box Office Data</p></span>
+    <span class="box"><p>Amazon Web Services<br>Scalable Cloud<br>Computing Services</p></span>
+    <span class="box"><p>AudibleBox Office Mojo<br>Find Movie<br>Box Office Data<br>Listen to Books & Original<br>Audio Performances</p></span>
+    
+
+
+</div>
+
+
+   
+</body>
+</html>
